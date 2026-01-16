@@ -36,7 +36,7 @@ export const workExperience = [
 		],
 		emblem: {
 			dark: "/musee-oceanographique.png",
-			light: "/musee-oceanographique.png",
+			light: "/musee-oceanographique-light.png",
 		},
 
 		emblemShape: "rect-v",
