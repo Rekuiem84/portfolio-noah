@@ -27,7 +27,19 @@ export default function ExperienceSection() {
 							subtitle={`${job.location}`}
 							date={`${job.period}`}
 							isLast={index === workExperience.length - 1}
-							index={index}>
+							index={index}
+							hasImage={!!job.emblem}>
+							{job.emblem && (
+								<div>
+									<img
+										src={job.emblem}
+										alt={job.company}
+										className={`emblem ${
+											job.emblemShape ? `emblem-${job.emblemShape}` : ""
+										}`}
+									/>
+								</div>
+							)}
 							<motion.div
 								className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
 								initial={{ opacity: 0, y: 20 }}

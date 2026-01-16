@@ -122,17 +122,21 @@
 .has-image {
 	position: relative;
 
+	.emblem {
+		width: 150px;
+	}
+	.emblem-square {
+		width: 80px;
+	}
 	@media (min-width: 560px) {
 		.emblem {
 			position: absolute;
-			width: 150px;
 			top: 1rem;
 			right: 1rem;
 		}
 	}
 	@media (max-width: 559px) {
 		.emblem {
-			width: 150px;
 			margin-block: 0.75rem;
 			margin-inline: auto 1rem;
 		}

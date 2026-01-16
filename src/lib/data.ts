@@ -1,13 +1,15 @@
 export const personalInfo = {
-	name: "Noah Gaiji Steinbergowicz",
+	name: "Noah Gaiji",
 	location: "Strasbourg, France",
 	email: "noah.gaiji@gmail.com",
+	cv: "/cv.pdf",
 	linkedin: "https://www.linkedin.com/in/noah-gaiji-b58343358/",
-	profilePicture: "/noah-style.jpg",
-	heroDescription1:
+	profilePicture: "/profile-picture.jpg",
+	heroDescription: [
 		"Passionné par la chimie, je me suis orienté vers un master de Chimie moléculaire et supramoléculaire à l’Université de Strasbourg, après avoir obtenu une licence de chimie, parcours international, à l’Université de Bordeaux. J’ai également eu l’opportunité d’effectuer une année à l’étranger à Genève, durant laquelle j’ai suivi la troisième année de mon bachelor.",
-	heroDescription2:
 		"Ce qui m’a motivé à poursuivre un master de chimie, ce sont les recherches menées sur des structures supramoléculaires fascinantes, notamment les cages métallo supramoléculaires de Fujita, les caténanes de Jean‑Marie Lehn, les rotaxanes de Jean‑Pierre Sauvage, ainsi que les pinces moléculaires.",
+		"Souhaitant m’orienter vers la recherche fondamentale, j’envisage une carrière soit comme enseignant-chercheur, soit comme chercheur au sein de structures académiques ou institutionnelles, en France et à l’international. Habitué aux mobilités académiques et géographiques multiples, je m’adapte facilement à de nouveaux contextes et équipes de recherche.",
+	],
 };
 
 export const workExperience = [
@@ -21,6 +23,19 @@ export const workExperience = [
 			"Maîtrise de techniques analytiques : HPLC, UPLC, GC, pH-métrie.",
 			"Rédaction de rapports techniques détaillés pour documenter les résultats des tests de stabilité.",
 		],
+		emblem: "/coty.png",
+		emblemShape: "rect",
+	},
+	{
+		company: "Musée Océanographique de Monaco",
+		location: "Monaco 🇲🇨",
+		position: "Réceptionniste / Guide",
+		period: "Été 2023",
+		achievements: [
+			"Service client, adaptabilité, communication multilingue, résolution de problèmes, travail en équipe, prise de parole en public.",
+		],
+		emblem: "/musee-oceanographique.png",
+		emblemShape: "square",
 	},
 ];
 
@@ -35,6 +50,8 @@ export const education = [
 			"Participation à un projet de recherche et de synthèse axé sur la caractérisation, la synthèse, et la formation de MOFs (Metal-Organic Frameworks) pour des applications en stockage de gaz et en catalyse (liguand alloxazine).",
 			"Maîtrise de compétences en techniques de laboratoire avancées en physico-chimie.",
 		],
+		emblem: "uni-strasbourg.png",
+		emblemShape: "rect",
 	},
 	{
 		institution: "Université de Genève",
@@ -47,7 +64,8 @@ export const education = [
 			"Appliqué en chimie physique/inorganique : spectroscopie Raman, spectroscopie électronique, mesures FRET et quenching de fluorescence pour analyser interactions moléculaires et transferts d'énergie.",
 			"Cette expertise multidisciplinaire (interprétation spectrale, optimisation protocoles) démontre ma polyvalence pour des projets de recherche.",
 		],
-		emblem: "/uni-geneve.svg.png",
+		emblem: "/uni-geneve.png",
+		emblemShape: "rect",
 	},
 	{
 		institution: "Université de Bordeaux",
@@ -59,6 +77,8 @@ export const education = [
 			"Ce parcours m'a rendu bilingue scientifique : l'ensemble des cours théoriques  et travaux pratiques s'est déroulé en anglais.",
 			"Cette immersion linguistique a consolidé mes compétences techniques tout en me préparant aux exigences des recherches européens et carrières internationales en chimie.",
 		],
+		emblem: "/uni-bordeaux.png",
+		emblemShape: "rect",
 	},
 	{
 		institution: "Lycée Albert 1er de Monaco",
@@ -66,6 +86,8 @@ export const education = [
 		degree:
 			"Baccalauréat Section Européenne - SVT & Physique-Chimie | Mention Très Bien",
 		period: "2021",
+		emblem: "/lycee-albert-1er.jpeg",
+		emblemShape: "square",
 	},
 ];
 export const skills = {
@@ -201,79 +223,20 @@ export const skills = {
 	languages: ["Français (natif)", "Anglais (C1)", "Espagnol (B2)"],
 };
 
-export const projects = [
-	{
-		title: "Lorem Ipsum Project",
-		github: "https://github.com/loremipsum/project",
-		description: [
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-			"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-			"Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-			"Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-			"Excepteur sint occaecat cupidatat non proident.",
-		],
-	},
-	{
-		title: "Dolor Sit Amet App",
-		github: "https://github.com/loremipsum/dolorapp",
-		description: [
-			"Morbi in sem quis dui placerat ornare.",
-			"Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-			"Praesent dapibus, neque id cursus faucibus.",
-			"Fusce feugiat malesuada odio.",
-			"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
-		],
-	},
-];
-
 export const awards = [
 	{
-		name: "Lorem Ipsum Award",
-		issuer: "Lorem Organization",
-		date: "Jan 2020",
-		type: "International",
-		position: "First Place",
+		name: "Volleyball",
 	},
 	{
-		name: "Dolor Sit Amet Prize",
-		issuer: "Ipsum Foundation",
-		date: "Feb 2021",
-		type: "National",
-		position: "Runner-up",
+		name: "Science",
 	},
 	{
-		name: "Consectetur Hackathon",
-		issuer: "Adipiscing Org",
-		date: "Mar 2022",
-		type: "National",
-		position: "Winner",
+		name: "Jeux Vidéo",
 	},
 	{
-		name: "Vestibulum Event",
-		issuer: "Vestibulum College",
-		date: "Apr 2022",
-		type: "National",
-		position: "First Prize",
+		name: "Musique",
 	},
 	{
-		name: "Curabitur Hackfest",
-		issuer: "Curabitur Institute",
-		date: "May 2022",
-		type: "National",
-		position: "Second Prize",
-	},
-	{
-		name: "Praesent Hacks",
-		issuer: "Praesent Group",
-		date: "Jun 2022",
-		type: "National",
-		position: "Second Runner-up",
-	},
-	{
-		name: "Fusce Hack",
-		issuer: "Fusce Club",
-		date: "Jul 2022",
-		type: "National",
-		position: "Most Impactful Hack",
+		name: "Voyages",
 	},
 ];

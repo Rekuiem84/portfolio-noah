@@ -17,7 +17,7 @@ export default function GlassHeader() {
 					href="/"
 					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.95 }}>
-					✨ {personalInfo.name}
+					💪 {personalInfo.name}
 				</motion.a>
 
 				{/* Desktop Navigation */}
@@ -26,8 +26,7 @@ export default function GlassHeader() {
 						{ label: "Parcours académique", href: "education" },
 						{ label: "Expériences professionnelles", href: "experience" },
 						{ label: "Compétences", href: "competences" },
-						{ label: "Projets", href: "projects" },
-						{ label: "Récompenses", href: "awards" },
+						{ label: "Centres d'intérêts", href: "interests" },
 					].map((item, index) => (
 						<motion.a
 							key={item.label}
@@ -83,7 +82,7 @@ export default function GlassHeader() {
 										{item === "education" && "🎓 "}
 										{item.charAt(0).toUpperCase() + item.slice(1)}
 									</motion.a>
-								)
+								),
 							)}
 						</nav>
 					</motion.div>

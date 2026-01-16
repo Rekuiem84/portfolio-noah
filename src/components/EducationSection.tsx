@@ -29,7 +29,9 @@ export default function EducationSection() {
 									<img
 										src={edu.emblem}
 										alt={edu.institution}
-										className="emblem"
+										className={`emblem ${
+											edu.emblemShape ? `emblem-${edu.emblemShape}` : ""
+										}`}
 									/>
 								</div>
 							)}
