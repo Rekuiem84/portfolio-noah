@@ -12,51 +12,6 @@ export const personalInfo = {
 
 export const workExperience = [
 	{
-		company: "Université de Starsbourg",
-		location: "Starsbourg, France 🇫🇷",
-		position: "Master 1, Chimie Moléculaire et Supramoléculaire",
-		period: "Septembre 2025 - Présent",
-		achievements: [
-			"J'ai approfondi mes connaissances en chimie supramoléculaire, en étudiant les interactions non covalentes et la conception de structures moléculaires complexes.",
-			"Participation à un projet de recherche et de synthèse axé sur la caractérisation, la synthèse, et la formation de MOFs (Metal-Organic Frameworks) pour des applications en stockage de gaz et en catalyse (liguand alloxazine).",
-			"Maîtrise de compétences en techniques de laboratoire avancées en physico-chimie.",
-		],
-	},
-	{
-		company: "Université de Genève",
-		location: "Genève, Suisse 🇨🇭",
-		position: "Année à l'étranger - Bachelor 3, Chimie",
-		period: "Septembre 2024 - Juin 2025",
-		achievements: [
-			"Au travers des travaux pratiques quotidiens d'après-midi, j'ai développé une autonomie expérimentale polyvalente en chimie organique de synthèses, physique , inorganique et cristallographiques et analytique.",
-			"Maîtrisé les techniques analytiques : HPLC, GPC/SEC, GC-MS, UPLC, cyclovoltamétrie, UV/Vis, fluorescence, électrophorèse capillaire, chromatographie ionique, RMN, RPE.",
-			"Appliqué en chimie physique/inorganique : spectroscopie Raman, spectroscopie électronique, mesures FRET et quenching de fluorescence pour analyser interactions moléculaires et transferts d'énergie.",
-			"Cette expertise multidisciplinaire (interprétation spectrale, optimisation protocoles) démontre ma polyvalence pour des projets de recherche.",
-		],
-	},
-	{
-		company: "Université de Bordeaux",
-		location: "Bordeaux, France 🇫🇷",
-		position: "License de Chimie, Parcours International | Mention Bien",
-		period: "Septembre 2022 - Juillet 2025",
-		achievements: [
-			"J'ai acquis des concepts essentiels dans tous les domaines fondamentaux, consolidant les bases nécessaires à ma progression vers le futur. J'ai maîtrisé les principes de la thermodynamique et des équilibres chimiques. Parallèlement, j'ai approfondi la chimie organique ainsi que la chimie inorganique et des polymères.",
-			"Ce parcours m'a rendu bilingue scientifique : l'ensemble des cours théoriques  et travaux pratiques s'est déroulé en anglais.",
-			"Cette immersion linguistique a consolidé mes compétences techniques tout en me préparant aux exigences des recherches européens et carrières internationales en chimie.",
-		],
-	},
-	{
-		company: "Lycée Albert 1er",
-		location: "Monaco 🇲🇨",
-		position:
-			"Baccalauréat Section Européenne - SVT & Physique-Chimie | Mention Très Bien",
-		period: "2021",
-		achievements: [""],
-	},
-];
-
-export const professionalExperience = [
-	{
 		company: "Coty",
 		location: "Monaco 🇲🇨",
 		position: "Stage en recherche et développement",
@@ -71,16 +26,45 @@ export const professionalExperience = [
 
 export const education = [
 	{
-		institution: "Lorem Ipsum University",
-		location: "Lorem City",
-		degree: "BSc Lorem Ipsum",
-		period: "2015 - 2019",
+		institution: "Université de Starsbourg",
+		location: "Strasbourg, France 🇫🇷",
+		degree: "Master 1, Chimie Moléculaire et Supramoléculaire",
+		period: "Septembre 2025 - Présent",
 		achievements: [
-			"President of Lorem Ipsum Club",
-			"Organized multiple lorem events",
-			"Represented university in national competitions.",
-			"Graduated with honors.",
+			"J'ai approfondi mes connaissances en chimie supramoléculaire, en étudiant les interactions non covalentes et la conception de structures moléculaires complexes.",
+			"Participation à un projet de recherche et de synthèse axé sur la caractérisation, la synthèse, et la formation de MOFs (Metal-Organic Frameworks) pour des applications en stockage de gaz et en catalyse (liguand alloxazine).",
+			"Maîtrise de compétences en techniques de laboratoire avancées en physico-chimie.",
 		],
+	},
+	{
+		institution: "Université de Genève",
+		location: "Genève, Suisse 🇨🇭",
+		degree: "Année à l'étranger - Bachelor 3, Chimie",
+		period: "Septembre 2024 - Juin 2025",
+		achievements: [
+			"Au travers des travaux pratiques quotidiens d'après-midi, j'ai développé une autonomie expérimentale polyvalente en chimie organique de synthèses, physique , inorganique et cristallographiques et analytique.",
+			"Maîtrisé les techniques analytiques : HPLC, GPC/SEC, GC-MS, UPLC, cyclovoltamétrie, UV/Vis, fluorescence, électrophorèse capillaire, chromatographie ionique, RMN, RPE.",
+			"Appliqué en chimie physique/inorganique : spectroscopie Raman, spectroscopie électronique, mesures FRET et quenching de fluorescence pour analyser interactions moléculaires et transferts d'énergie.",
+			"Cette expertise multidisciplinaire (interprétation spectrale, optimisation protocoles) démontre ma polyvalence pour des projets de recherche.",
+		],
+	},
+	{
+		institution: "Université de Bordeaux",
+		location: "Bordeaux, France 🇫🇷",
+		degree: "License de Chimie, Parcours International | Mention Bien",
+		period: "Septembre 2022 - Juillet 2025",
+		achievements: [
+			"J'ai acquis des concepts essentiels dans tous les domaines fondamentaux, consolidant les bases nécessaires à ma progression vers le futur. J'ai maîtrisé les principes de la thermodynamique et des équilibres chimiques. Parallèlement, j'ai approfondi la chimie organique ainsi que la chimie inorganique et des polymères.",
+			"Ce parcours m'a rendu bilingue scientifique : l'ensemble des cours théoriques  et travaux pratiques s'est déroulé en anglais.",
+			"Cette immersion linguistique a consolidé mes compétences techniques tout en me préparant aux exigences des recherches européens et carrières internationales en chimie.",
+		],
+	},
+	{
+		institution: "Lycée Albert 1er de Monaco",
+		location: "Monaco 🇲🇨",
+		degree:
+			"Baccalauréat Section Européenne - SVT & Physique-Chimie | Mention Très Bien",
+		period: "2021",
 	},
 ];
 export const skills = {
