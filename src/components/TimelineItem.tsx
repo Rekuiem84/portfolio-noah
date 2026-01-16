@@ -9,6 +9,7 @@ interface TimelineItemProps {
 	isLast?: boolean;
 	index?: number;
 	children?: React.ReactNode;
+	hasImage?: boolean;
 }
 
 export default function TimelineItem({
@@ -18,10 +19,11 @@ export default function TimelineItem({
 	isLast = false,
 	index = 0,
 	children,
+	hasImage = false,
 }: TimelineItemProps) {
 	return (
 		<motion.div
-			className="relative flex gap-6 has-image"
+			className={cn("relative flex gap-6", hasImage && "has-image")}
 			initial={{ opacity: 0, y: 20 }}
 			whileInView={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5, delay: index * 0.2 }}

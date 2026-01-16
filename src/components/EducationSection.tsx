@@ -22,11 +22,20 @@ export default function EducationSection() {
 							subtitle={`${edu.institution}`}
 							date={`${edu.period}`}
 							isLast={index === education.length - 1}
-							index={index}>
+							index={index}
+							hasImage={!!edu.emblem}>
+							{edu.emblem && (
+								<div>
+									<img
+										src={edu.emblem}
+										alt={edu.institution}
+										className="emblem"
+									/>
+								</div>
+							)}
 							<p className="text-sm text-muted-foreground mb-3">
 								📍 {edu.location}
 							</p>
-
 							{edu.achievements && edu.achievements.length > 0 && (
 								<motion.div
 									className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"

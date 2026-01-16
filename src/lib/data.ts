@@ -3,7 +3,7 @@ export const personalInfo = {
 	location: "Strasbourg, France",
 	email: "noah.gaiji@gmail.com",
 	linkedin: "https://www.linkedin.com/in/noah-gaiji-b58343358/",
-	profilePicture: "/profile-picture.jpg",
+	profilePicture: "/noah-style.jpg",
 	heroDescription1:
 		"Passionné par la chimie, je me suis orienté vers un master de Chimie moléculaire et supramoléculaire à l’Université de Strasbourg, après avoir obtenu une licence de chimie, parcours international, à l’Université de Bordeaux. J’ai également eu l’opportunité d’effectuer une année à l’étranger à Genève, durant laquelle j’ai suivi la troisième année de mon bachelor.",
 	heroDescription2:
@@ -43,10 +43,11 @@ export const education = [
 		period: "Septembre 2024 - Juin 2025",
 		achievements: [
 			"Au travers des travaux pratiques quotidiens d'après-midi, j'ai développé une autonomie expérimentale polyvalente en chimie organique de synthèses, physique , inorganique et cristallographiques et analytique.",
-			"Maîtrisé les techniques analytiques : HPLC, GPC/SEC, GC-MS, UPLC, cyclovoltamétrie, UV/Vis, fluorescence, électrophorèse capillaire, chromatographie ionique, RMN, RPE.",
+			"Maîtrise des techniques analytiques : HPLC, GPC/SEC, GC-MS, UPLC, cyclovoltamétrie, UV/Vis, fluorescence, électrophorèse capillaire, chromatographie ionique, RMN, RPE.",
 			"Appliqué en chimie physique/inorganique : spectroscopie Raman, spectroscopie électronique, mesures FRET et quenching de fluorescence pour analyser interactions moléculaires et transferts d'énergie.",
 			"Cette expertise multidisciplinaire (interprétation spectrale, optimisation protocoles) démontre ma polyvalence pour des projets de recherche.",
 		],
+		emblem: "/uni-geneve.svg.png",
 	},
 	{
 		institution: "Université de Bordeaux",
