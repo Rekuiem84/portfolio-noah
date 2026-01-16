@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { skills } from "@/lib/data";
 import { motion, useInView } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
+import { ChevronDown } from "lucide-react";
 
 function SkillTag({ skill, index }: { skill: string; index: number }) {
 	return (
 		<motion.div
 			whileHover={{ scale: 1.05, y: -2 }}
-			className="px-3 py-1 bg-muted/80 backdrop-blur-sm rounded-md text-sm border border-purple-500/10 shadow-sm">
+			className="px-3 py-1 bg-muted/80 backdrop-blur-sm rounded-md text-sm border border-purple-500/10 shadow-sm text-center">
 			{skill}
 		</motion.div>
 	);
@@ -59,6 +60,13 @@ function SkillCategory({
 }) {
 	const ref = React.useRef(null);
 	const isInView = useInView(ref, { once: true, margin: "-50px" });
+	const [isExpanded, setIsExpanded] = useState(false);
+
+	const SKILLS_LIMIT = 10;
+	const displayedSkills = isExpanded
+		? categorySkills
+		: categorySkills.slice(0, SKILLS_LIMIT);
+	const hasMoreSkills = categorySkills.length > SKILLS_LIMIT;
 
 	return (
 		<motion.div ref={ref} variants={skillCategoryVariants}>
@@ -70,10 +78,27 @@ function SkillCategory({
 						<span className="mr-2 text-xl">{icon}</span> {title}
 					</h3>
 					<div className="flex flex-wrap gap-2 justify-center md:justify-start">
-						{categorySkills.map((skill, index) => (
+						{displayedSkills.map((skill, index) => (
 							<SkillTag key={skill} skill={skill} index={index} />
 						))}
 					</div>
+					{hasMoreSkills && (
+						<motion.button
+							onClick={() => setIsExpanded(!isExpanded)}
+							className="mt-4 flex items-center gap-2 mx-auto md:mx-0 text-sm text-muted-foreground hover:text-foreground transition-colors"
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}>
+							<ChevronDown
+								className="h-4 w-4 transition-transform duration-300"
+								style={{
+									transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)",
+								}}
+							/>
+							{isExpanded
+								? `Voir moins (${SKILLS_LIMIT}/${categorySkills.length})`
+								: `Voir plus (+${categorySkills.length - SKILLS_LIMIT})`}
+						</motion.button>
+					)}
 				</GlassCard>
 			)}
 		</motion.div>
@@ -83,7 +108,7 @@ function SkillCategory({
 export default function SkillsSection() {
 	return (
 		<section
-			id="skills"
+			id="competences"
 			className="py-12 bg-gradient-to-b from-background to-muted/20">
 			<div className="container max-w-4xl mx-auto px-6 md:px-4">
 				<MotionWrapper>

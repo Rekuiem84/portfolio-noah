@@ -39,7 +39,7 @@ export default function HeroSection() {
 							className="text-4xl font-bold mb-2"
 							variants={childVariants}>
 							{personalInfo.name}{" "}
-							<span className="inline-block animate-pulse">🇲🇨</span>
+							{/* <span className="inline-block animate-pulse">🇲🇨</span> */}
 						</motion.h1>
 
 						<motion.p

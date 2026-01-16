@@ -1,5 +1,5 @@
 export const personalInfo = {
-	name: "Noah Gaiji",
+	name: "Noah Gaiji Steinbergowicz",
 	location: "Strasbourg, France",
 	email: "noah.gaiji@gmail.com",
 	linkedin: "https://www.linkedin.com/in/noah-gaiji-b58343358/",
