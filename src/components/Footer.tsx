@@ -18,7 +18,7 @@ export default function Footer() {
 						&copy; {new Date().getFullYear()} {personalInfo.name}
 					</motion.p>
 
-					<motion.a
+					{/* <motion.a
 						href={personalInfo.cv}
 						target="_blank"
 						rel="noopener noreferrer"
@@ -27,7 +27,7 @@ export default function Footer() {
 						whileTap={{ scale: 0.95 }}>
 						<FileText className="h-4 w-4" />
 						Voir mon CV
-					</motion.a>
+					</motion.a> */}
 				</motion.div>
 			</div>
 		</footer>

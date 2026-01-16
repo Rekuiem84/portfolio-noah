@@ -2,7 +2,6 @@ export const personalInfo = {
 	name: "Noah Gaiji",
 	location: "Strasbourg, France",
 	email: "noah.gaiji@gmail.com",
-	cv: "/cv.pdf",
 	linkedin: "https://www.linkedin.com/in/noah-gaiji-b58343358/",
 	profilePicture: "/profile-picture.jpg",
 	heroDescription: [
