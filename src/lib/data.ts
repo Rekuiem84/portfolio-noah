@@ -3,7 +3,7 @@ export const personalInfo = {
 	location: "Strasbourg, France",
 	email: "noah.gaiji@gmail.com",
 	linkedin: "https://www.linkedin.com/in/noah-gaiji-b58343358/",
-	profilePicture: "/classy.jpg",
+	profilePicture: "/profile-picture.jpg",
 	heroDescription1:
 		"Passionné par la chimie, je me suis orienté vers un master de Chimie moléculaire et supramoléculaire à l’Université de Strasbourg, après avoir obtenu une licence de chimie, parcours international, à l’Université de Bordeaux. J’ai également eu l’opportunité d’effectuer une année à l’étranger à Genève, durant laquelle j’ai suivi la troisième année de mon bachelor.",
 	heroDescription2:
