@@ -2,8 +2,10 @@ import { personalInfo } from "@/lib/data";
 import { Mail, Github, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import { useState } from "react";
 
 export default function HeroSection() {
+	const [clickCount, setClickCount] = useState(0);
 	const containerVariants = {
 		hidden: { opacity: 0 },
 		visible: {
@@ -89,10 +91,15 @@ export default function HeroSection() {
 						<div className="relative">
 							<div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
 							<img
-								src={personalInfo.profilePicture}
+								src={
+									clickCount >= 67
+										? personalInfo.profilePictureCool
+										: personalInfo.profilePicture
+								}
 								alt="Profile"
 								className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
 								style={{ objectFit: "cover" }}
+								onClick={() => setClickCount((prev) => prev + 1)}
 							/>
 						</div>
 					</motion.div>

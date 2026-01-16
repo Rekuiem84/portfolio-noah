@@ -4,6 +4,7 @@ export const personalInfo = {
 	email: "noah.gaiji@gmail.com",
 	linkedin: "https://www.linkedin.com/in/noah-gaiji-b58343358/",
 	profilePicture: "/profile-picture.jpg",
+	profilePictureCool: "/noah-style.jpg",
 	heroDescription: [
 		"Passionné par la chimie, je me suis orienté vers un master de Chimie moléculaire et supramoléculaire à l’Université de Strasbourg, après avoir obtenu une licence de chimie, parcours international, à l’Université de Bordeaux. J’ai également eu l’opportunité d’effectuer une année à l’étranger à Genève, durant laquelle j’ai suivi la troisième année de mon bachelor.",
 		"Ce qui m’a motivé à poursuivre un master de chimie, ce sont les recherches menées sur des structures supramoléculaires fascinantes, notamment les cages métallo supramoléculaires de Fujita, les caténanes de Jean‑Marie Lehn, les rotaxanes de Jean‑Pierre Sauvage, ainsi que les pinces moléculaires.",
