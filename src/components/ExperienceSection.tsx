@@ -3,8 +3,20 @@ import TimelineItem from "./TimelineItem";
 import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
+import { useEffect, useState } from "react";
 
 export default function ExperienceSection() {
+	const [isDark, setIsDark] = useState(false);
+
+	useEffect(() => {
+		const checkDarkMode = () => {
+			setIsDark(document.documentElement.classList.contains("dark"));
+		};
+		checkDarkMode();
+		const observer = new MutationObserver(checkDarkMode);
+		observer.observe(document.documentElement, { attributes: true });
+		return () => observer.disconnect();
+	}, []);
 	return (
 		<section id="experience" className="py-12 from-muted/20 to-background">
 			<div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -32,7 +44,13 @@ export default function ExperienceSection() {
 							{job.emblem && (
 								<div>
 									<img
-										src={job.emblem}
+										src={
+											typeof job.emblem === "string"
+												? job.emblem
+												: isDark
+													? job.emblem.dark
+													: job.emblem.light
+										}
 										alt={job.company}
 										className={`emblem ${
 											job.emblemShape ? `emblem-${job.emblemShape}` : ""
@@ -41,16 +59,16 @@ export default function ExperienceSection() {
 								</div>
 							)}
 							<motion.div
-								className="mt-3 p-4 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
+								className="mt-3 p-4 ml-6 bg-background/80 backdrop-blur-sm backdrop-filter rounded-lg border border-purple-500/20 dark:bg-card/10 dark:border-purple-500/10 shadow-sm"
 								initial={{ opacity: 0, y: 20 }}
 								whileInView={{ opacity: 1, y: 0 }}
 								transition={{ duration: 0.5, delay: 0.2 }}
 								viewport={{ once: true }}>
-								<ul className="list-none ml-4 space-y-2 text-sm">
+								<ul className="list-none ml-2 space-y-2 text-sm">
 									{job.achievements.map((achievement, i) => (
 										<motion.li
 											key={i}
-											className="text-muted-foreground relative pl-6"
+											className="text-muted-foreground relative"
 											initial={{ opacity: 0, x: -10 }}
 											whileInView={{ opacity: 1, x: 0 }}
 											transition={{ duration: 0.3, delay: 0.1 * i }}

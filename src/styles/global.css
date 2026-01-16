@@ -124,9 +124,13 @@
 
 	.emblem {
 		width: 150px;
+		z-index: -1;
 	}
 	.emblem-square {
 		width: 80px;
+	}
+	.emblem-rect-v {
+		width: 50px;
 	}
 	@media (min-width: 560px) {
 		.emblem {
@@ -135,10 +139,9 @@
 			right: 1rem;
 		}
 	}
-	@media (max-width: 559px) {
+	@media (max-width: 640px) {
 		.emblem {
-			margin-block: 0.75rem;
-			margin-inline: auto 1rem;
+			display: none;
 		}
 	}
 }

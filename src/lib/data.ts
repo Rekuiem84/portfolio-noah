@@ -23,7 +23,7 @@ export const workExperience = [
 			"Maîtrise de techniques analytiques : HPLC, UPLC, GC, pH-métrie.",
 			"Rédaction de rapports techniques détaillés pour documenter les résultats des tests de stabilité.",
 		],
-		emblem: "/coty.png",
+		emblem: { dark: "/coty.png", light: "/coty-light.png" },
 		emblemShape: "rect",
 	},
 	{
@@ -34,8 +34,12 @@ export const workExperience = [
 		achievements: [
 			"Service client, adaptabilité, communication multilingue, résolution de problèmes, travail en équipe, prise de parole en public.",
 		],
-		emblem: "/musee-oceanographique.png",
-		emblemShape: "square",
+		emblem: {
+			dark: "/musee-oceanographique.png",
+			light: "/musee-oceanographique.png",
+		},
+
+		emblemShape: "rect-v",
 	},
 ];
 
@@ -77,7 +81,10 @@ export const education = [
 			"Ce parcours m'a rendu bilingue scientifique : l'ensemble des cours théoriques  et travaux pratiques s'est déroulé en anglais.",
 			"Cette immersion linguistique a consolidé mes compétences techniques tout en me préparant aux exigences des recherches européens et carrières internationales en chimie.",
 		],
-		emblem: "/uni-bordeaux.png",
+		emblem: {
+			dark: "/uni-bordeaux.png",
+			light: "/uni-bordeaux-light.png",
+		},
 		emblemShape: "rect",
 	},
 	{
