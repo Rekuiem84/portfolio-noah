@@ -17,7 +17,7 @@ export default function GlassHeader() {
 					href="/"
 					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.95 }}>
-					💪 {personalInfo.name}
+					{personalInfo.name}
 				</motion.a>
 
 				{/* Desktop Navigation */}
